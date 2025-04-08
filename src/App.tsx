@@ -4,9 +4,17 @@ import Badge from "./components/Badge/Badge";
 function App() {
   return (
     <>
-      <h1>Component Library</h1>
-      <h2>Badges</h2>
-      <Badge />
+      <header>
+        <h1>Component Library</h1>
+      </header>
+      <main>
+        <section className="badges">
+          <h2>Badges</h2>
+          <div className="badge-options">
+            <Badge />
+          </div>
+        </section>
+      </main>
     </>
   );
 }
