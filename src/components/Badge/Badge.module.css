@@ -4,3 +4,15 @@
   border-radius: 1.5rem;
   color: azure;
 }
+
+.sm {
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  font-size: 0.75rem;
+}
+
+.lg {
+  padding: 2rem 4rem;
+  border-radius: 3rem;
+  font-size: 1.5rem;
+}

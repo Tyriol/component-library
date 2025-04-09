@@ -12,6 +12,8 @@ function App() {
           <h2>Badges</h2>
           <div className="badge-options">
             <Badge />
+            <Badge size="sm" />
+            <Badge size="lg" />
           </div>
         </section>
       </main>
