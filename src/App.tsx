@@ -14,7 +14,6 @@ function App() {
           <SectionRow rowTitle="Square">
             <Badge />
           </SectionRow>
-          {/* <Badge /> */}
         </Section>
       </main>
     </>
