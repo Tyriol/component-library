@@ -1,5 +1,6 @@
 import "./App.css";
 import Section from "./components/Section/Section";
+import SectionRow from "./components/SectionRow/SectionRow";
 import Badge from "./components/Badge/Badge";
 
 function App() {
@@ -10,7 +11,10 @@ function App() {
       </header>
       <main>
         <Section title="Badges">
-          <Badge />
+          <SectionRow rowTitle="Square">
+            <Badge />
+          </SectionRow>
+          {/* <Badge /> */}
         </Section>
       </main>
     </>
