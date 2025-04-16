@@ -1,0 +1,9 @@
+.sectionRowOptions {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.title {
+  color: #6e6e6e;
+}

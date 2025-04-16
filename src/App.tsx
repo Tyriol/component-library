@@ -1,4 +1,6 @@
 import "./App.css";
+import Section from "./components/Section/Section";
+import SectionRow from "./components/SectionRow/SectionRow";
 import Badge from "./components/Badge/Badge";
 
 function App() {
@@ -8,14 +10,11 @@ function App() {
         <h1>Component Library</h1>
       </header>
       <main>
-        <section className="badges">
-          <h2>Badges</h2>
-          <div className="badge-options">
+        <Section title="Badges">
+          <SectionRow rowTitle="Square">
             <Badge />
-            <Badge size="sm" />
-            <Badge size="lg" />
-          </div>
-        </section>
+          </SectionRow>
+        </Section>
       </main>
     </>
   );
