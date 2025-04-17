@@ -2,15 +2,50 @@ import React from "react";
 import styles from "./Badge.module.css";
 
 interface BadgeProps {
-  size?: "sm" | "lg";
+  title: string;
+  variant?: "rounded" | "square";
+  colour?: "gray" | "red" | "yellow" | "green" | "blue" | "indigo" | "purple" | "pink";
 }
 
 export default function Badge(props: BadgeProps): React.ReactNode {
-  let size;
-  if (props.size === "sm") {
-    size = styles.sm;
-  } else if (props.size === "lg") {
-    size = styles.lg;
+  let variant;
+  if (!props.variant || props.variant === "rounded") {
+    variant = styles.rounded;
+  } else {
+    variant = styles.square;
   }
-  return <span className={`${styles.badge} ${size}`}>Badge</span>;
+
+  let colour;
+  switch (props.colour) {
+    case "gray":
+      colour = styles.gray;
+      break;
+    case "red":
+      colour = styles.red;
+      break;
+    case "yellow":
+      colour = styles.yellow;
+      break;
+    case "green":
+      colour = styles.green;
+      break;
+    case "blue":
+      colour = styles.blue;
+      break;
+    case "indigo":
+      colour = styles.indigo;
+      break;
+    case "purple":
+      colour = styles.purple;
+      break;
+    case "pink":
+      colour = styles.pink;
+      break;
+    default:
+      colour = styles.gray;
+  }
+
+  const badgeClass = `${styles.badge} ${variant} ${colour}`;
+
+  return <span className={badgeClass}>{props.title}</span>;
 }

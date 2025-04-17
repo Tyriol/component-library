@@ -1,18 +1,52 @@
 .badge {
-  padding: 1rem 2rem;
-  background-color: rgb(82, 82, 223);
-  border-radius: 1.5rem;
-  color: azure;
+  padding: 0.25rem 1rem;
+  font-weight: 500;
 }
 
-.sm {
-  padding: 0.5rem 1rem;
+.rounded {
   border-radius: 1rem;
-  font-size: 0.75rem;
 }
 
-.lg {
-  padding: 2rem 4rem;
-  border-radius: 3rem;
-  font-size: 1.5rem;
+.square {
+  border-radius: 0.3rem;
+}
+
+.gray {
+  background-color: #f3f4f6;
+  color: #1f2937;
+}
+
+.red {
+  background-color: #fee2e2;
+  color: #991b1b;
+}
+
+.yellow {
+  background-color: #fef3c7;
+  color: #92400e;
+}
+
+.green {
+  background-color: #d1fae5;
+  color: #065f46;
+}
+
+.blue {
+  background-color: #dbeafe;
+  color: #1e40af;
+}
+
+.indigo {
+  background-color: #e0e7ff;
+  color: #3730a3;
+}
+
+.purple {
+  background-color: #ede9fe;
+  color: #5b21b6;
+}
+
+.pink {
+  background-color: #fce7f3;
+  color: #9d174d;
 }
