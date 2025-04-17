@@ -11,6 +11,9 @@ function App() {
       </header>
       <main>
         <Section title="Badges">
+          <SectionRow rowTitle="Rounded">
+            <Badge />
+          </SectionRow>
           <SectionRow rowTitle="Square">
             <Badge />
           </SectionRow>
