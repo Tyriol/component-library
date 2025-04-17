@@ -11,6 +11,11 @@ function App() {
       </header>
       <main>
         <Section title="Badges">
+          <div>
+            <h3>Example:</h3>
+            <p>{`<Badge title="red" variant="rounded" colour="red" />`}</p>
+            <p>No variant or colour will default to "rounded" "gray"</p>
+          </div>
           <SectionRow rowTitle="Rounded">
             <Badge title="default" variant="rounded" />
             <Badge title="red" variant="rounded" colour="red" />
