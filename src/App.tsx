@@ -12,24 +12,24 @@ function App() {
       <main>
         <Section title="Badges">
           <SectionRow rowTitle="Rounded">
-            <Badge variant="rounded" />
-            <Badge variant="rounded" colour="red" />
-            <Badge variant="rounded" colour="yellow" />
-            <Badge variant="rounded" colour="green" />
-            <Badge variant="rounded" colour="blue" />
-            <Badge variant="rounded" colour="indigo" />
-            <Badge variant="rounded" colour="purple" />
-            <Badge variant="rounded" colour="pink" />
+            <Badge title="default" variant="rounded" />
+            <Badge title="red" variant="rounded" colour="red" />
+            <Badge title="yellow" variant="rounded" colour="yellow" />
+            <Badge title="green" variant="rounded" colour="green" />
+            <Badge title="blue" variant="rounded" colour="blue" />
+            <Badge title="indigo" variant="rounded" colour="indigo" />
+            <Badge title="purple" variant="rounded" colour="purple" />
+            <Badge title="pink" variant="rounded" colour="pink" />
           </SectionRow>
           <SectionRow rowTitle="Square">
-            <Badge variant="square" />
-            <Badge variant="square" colour="red" />
-            <Badge variant="square" colour="yellow" />
-            <Badge variant="square" colour="green" />
-            <Badge variant="square" colour="blue" />
-            <Badge variant="square" colour="indigo" />
-            <Badge variant="square" colour="purple" />
-            <Badge variant="square" colour="pink" />
+            <Badge title="default" variant="square" />
+            <Badge title="red" variant="square" colour="red" />
+            <Badge title="yellow" variant="square" colour="yellow" />
+            <Badge title="green" variant="square" colour="green" />
+            <Badge title="blue" variant="square" colour="blue" />
+            <Badge title="indigo" variant="square" colour="indigo" />
+            <Badge title="purple" variant="square" colour="purple" />
+            <Badge title="pink" variant="square" colour="pink" />
           </SectionRow>
         </Section>
       </main>

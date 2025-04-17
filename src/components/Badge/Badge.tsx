@@ -2,6 +2,7 @@ import React from "react";
 import styles from "./Badge.module.css";
 
 interface BadgeProps {
+  title: string;
   variant?: "rounded" | "square";
   colour?: "gray" | "red" | "yellow" | "green" | "blue" | "indigo" | "purple" | "pink";
 }
@@ -46,5 +47,5 @@ export default function Badge(props: BadgeProps): React.ReactNode {
 
   const badgeClass = `${styles.badge} ${variant} ${colour}`;
 
-  return <span className={badgeClass}>Badge</span>;
+  return <span className={badgeClass}>{props.title}</span>;
 }
