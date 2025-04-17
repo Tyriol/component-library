@@ -17,7 +17,7 @@ function App() {
             <p>No variant or colour will default to "rounded" "gray"</p>
           </div>
           <SectionRow rowTitle="Rounded">
-            <Badge title="default" variant="rounded" />
+            <Badge title="gray" variant="rounded" colour="gray" />
             <Badge title="red" variant="rounded" colour="red" />
             <Badge title="yellow" variant="rounded" colour="yellow" />
             <Badge title="green" variant="rounded" colour="green" />
@@ -27,7 +27,7 @@ function App() {
             <Badge title="pink" variant="rounded" colour="pink" />
           </SectionRow>
           <SectionRow rowTitle="Square">
-            <Badge title="default" variant="square" />
+            <Badge title="gray" variant="square" colour="gray" />
             <Badge title="red" variant="square" colour="red" />
             <Badge title="yellow" variant="square" colour="yellow" />
             <Badge title="green" variant="square" colour="green" />
