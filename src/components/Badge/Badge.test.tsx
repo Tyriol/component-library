@@ -19,7 +19,7 @@ describe(Badge, () => {
     expect(badgeElement.className).toMatch(/square/);
   });
 
-  it("displays as a the correct colour if the correct colour is passed in via props", () => {
+  it("displays as the correct colour if the correct colour is passed in via props", () => {
     render(<Badge title="test" colour="pink" />);
     const badgeElement = screen.getByText("test");
     expect(badgeElement).toBeInTheDocument();
