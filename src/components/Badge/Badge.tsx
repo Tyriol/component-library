@@ -8,44 +8,37 @@ interface BadgeProps {
 }
 
 export default function Badge(props: BadgeProps): React.ReactNode {
-  let variant;
-  if (!props.variant || props.variant === "rounded") {
-    variant = styles.rounded;
-  } else {
-    variant = styles.square;
+  const variantClass = props.variant === "square" ? styles.square : styles.rounded;
+
+  let colourClass = styles.gray;
+
+  if (props.colour) {
+    switch (props.colour) {
+      case "red":
+        colourClass = styles.red;
+        break;
+      case "yellow":
+        colourClass = styles.yellow;
+        break;
+      case "green":
+        colourClass = styles.green;
+        break;
+      case "blue":
+        colourClass = styles.blue;
+        break;
+      case "indigo":
+        colourClass = styles.indigo;
+        break;
+      case "purple":
+        colourClass = styles.purple;
+        break;
+      case "pink":
+        colourClass = styles.pink;
+        break;
+    }
   }
 
-  let colour;
-  switch (props.colour) {
-    case "gray":
-      colour = styles.gray;
-      break;
-    case "red":
-      colour = styles.red;
-      break;
-    case "yellow":
-      colour = styles.yellow;
-      break;
-    case "green":
-      colour = styles.green;
-      break;
-    case "blue":
-      colour = styles.blue;
-      break;
-    case "indigo":
-      colour = styles.indigo;
-      break;
-    case "purple":
-      colour = styles.purple;
-      break;
-    case "pink":
-      colour = styles.pink;
-      break;
-    default:
-      colour = styles.gray;
-  }
-
-  const badgeClass = `${styles.badge} ${variant} ${colour}`;
+  const badgeClass = `${styles.badge} ${variantClass} ${colourClass}`;
 
   return <span className={badgeClass}>{props.title}</span>;
 }
