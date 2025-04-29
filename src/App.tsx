@@ -2,6 +2,7 @@ import "./App.css";
 import Section from "./components/Section/Section";
 import SectionRow from "./components/SectionRow/SectionRow";
 import Badge from "./components/Badge/Badge";
+import Banner from "./components/Banner/Banner";
 
 function App() {
   return (
@@ -35,6 +36,16 @@ function App() {
             <Badge title="indigo" variant="square" colour="indigo" />
             <Badge title="purple" variant="square" colour="purple" />
             <Badge title="pink" variant="square" colour="pink" />
+          </SectionRow>
+        </Section>
+        <Section title="Banners">
+          <div>
+            <h3>Example:</h3>
+            <p>{`<Banner coming soon />`}</p>
+            <p>WiP, coming soon</p>
+          </div>
+          <SectionRow rowTitle="Hello">
+            <Banner />
           </SectionRow>
         </Section>
       </main>
